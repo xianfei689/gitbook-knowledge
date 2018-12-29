@@ -1,13 +1,5 @@
 # 比特币入门教程 {#page-title}
 
-
-
-作者：[阮一峰](http://www.ruanyifeng.com/)
-
-日期：[2018年1月 4日](http://www.ruanyifeng.com/blog/2018/01/)
-
-[![](http://www.ruanyifeng.com/blog/images/0asddeewr1.png "珠峰培训")](http://www.zhufengpeixun.cn/main/index.html?ref=ruanyifeng)
-
 比特币（bitcoin）诞生于2008年的一篇[论文](https://bitcoin.org/en/bitcoin-paper)。
 
 一个署名为中本聪的人，提出了革命性的构想：让我们创造一种不受政府或其他任何人控制的货币！这个想法堪称疯狂：一串数字，背后没有任何资产支持，也没有任何人负责，你把它当作钱付给对方，怎么会有人愿意接受？
