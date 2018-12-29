@@ -1,4 +1,4 @@
-# 比特币入门教程 {#page-title}
+# 1.比特币入门教程 {#page-title}
 
 比特币（bitcoin）诞生于2008年的一篇[论文](https://bitcoin.org/en/bitcoin-paper)。
 
