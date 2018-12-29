@@ -1,7 +1,6 @@
 # Summary
 
 * [技术拓展](README.md)
-* b
 
 ## page
 
