@@ -48,7 +48,7 @@
 > * 上一个区块的哈希
 > * ...
 
-这里，你需要理解什么叫[哈希](https://baike.baidu.com/item/%E5%93%88%E5%B8%8C%E5%80%BC)（hash），这是理解区块链必需的。
+这里，你需要理解什么叫[哈希](https://baike.baidu.com/item/哈希值)（hash），这是理解区块链必需的。
 
 ![](http://www.ruanyifeng.com/blogimg/asset/2017/bg2017122704.png)
 
@@ -153,10 +153,8 @@ Nonce 是一个随机值，矿工的作用其实就是猜出 Nonce 的值，使�
 
 ## 十、参考链接
 
-* [How does blockchain really work?](https://medium.freecodecamp.org/how-does-blockchain-really-work-i-built-an-app-to-show-you-6b70cd4caf7d)
-  , by Sean Han
-* [Bitcoin mining the hard way: the algorithms, protocols, and bytes](http://www.righto.com/2014/02/bitcoin-mining-hard-way-algorithms.html)
-  , by Ken Shirriff
+* [How does blockchain really work?](https://medium.freecodecamp.org/how-does-blockchain-really-work-i-built-an-app-to-show-you-6b70cd4caf7d), by Sean Han
+* [Bitcoin mining the hard way: the algorithms, protocols, and bytes](http://www.righto.com/2014/02/bitcoin-mining-hard-way-algorithms.html), by Ken Shirriff
 
 
 
