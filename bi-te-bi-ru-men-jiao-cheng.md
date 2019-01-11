@@ -2,13 +2,13 @@
 
 比特币（bitcoin）诞生于2008年的一篇[论文](https://bitcoin.org/en/bitcoin-paper)。
 
-一个署名为中本聪的人，提出了革命性的构想：让我们创造一种不受政府或其他任何人控制的货币！这个想法堪称疯狂：一串数字，背后没有任何资产支持，也没有任何人负责，你把它当作钱付给对方，怎么会有人愿意接受？
+一个署名为中本聪的人，提出了革命性的构想：让我们创造一种不受政府或其他任何人控制的货币！这个想法堪称疯狂：一串数字，背后没有任何资产支持，也没有任何人负责，你3.0，怎么会有人愿意接受？
 
-![](http://www.ruanyifeng.com/blogimg/asset/2018/bg2018010401.jpg)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/3.0.jpg)
 
 但是，狂想居然变成了现实。随后的几年，在全世界无数爱好者的支持下，比特币网络运行起来了，越来越多的人和资本参与，星星之火，终成燎原。刚刚过去的2017年，比特币迎来了爆发式的增长，从年初的1000美元，最高涨到了2万美元，全世界都为之震动，上到政府，下到普通百姓都在关注。事实就是比特币已经并将继续改变世界。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2018/bg2018010402.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/3.1.png)
 
 新闻媒体往往只关注它的火爆表现，忽视或者无法回答一些基本的问题。
 
@@ -27,7 +27,7 @@
 
 你可能听说过这个词，所谓非对称加密，其实很简单，就是加密和解密需要两把钥匙：一把公钥和一把私钥。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2018/bg2018010403.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/3.2.png)
 
 公钥是公开的，任何人都可以获取。私钥是保密的，只有拥有者才能使用。他人使用你的公钥加密信息，然后发送给你，你用私钥解密，取出信息。反过来，你也可以用私钥加密信息，别人用你的公钥解开，从而证明这个信息确实是你发出的，且未被篡改，这叫做数字签名（更详细的介绍请看[《什么是数字签名》](http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)）。
 
@@ -47,11 +47,11 @@
 
 你去网上那些比特币交易所开户，它们会让你首先生成一个比特币钱包（wallet）。**这个钱包不是用来存放比特币，而是存放你的公钥和私钥。**软件会帮你生成这两把钥匙，然后放在钱包里面。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2018/bg2018010404.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/3.3.png)
 
 根据协议，公钥的长度是512位。这个长度不太方便传播，因此协议又规定，要为公钥生成一个160位的指纹。所谓指纹，就是一个比较短的、易于传播的哈希值。160位是二进制，写成十六进制，大约是26到35个字符，比如 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2。这个字符串就叫做钱包的地址，它是唯一的，即每个钱包的地址肯定都是不一样的。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2018/bg2018010405.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/3.4.png)
 
 你向别人收钱时，只要告诉对方你的钱包地址即可，对方向这个地址付款。由于你是这个地址的拥有者，所以你会收到这笔钱。
 
@@ -94,7 +94,7 @@
 
 根据比特币协议，一个区块的大小最大是 1MB，而一笔交易大概是500字节左右，因此一个区块最多可以包含2000多笔交易。矿工负责把这2000多笔交易打包在一起，组成一个区块，然后计算这个区块的哈希。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2018/bg2018010406.jpg)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/3.5.png)
 
 计算哈希的过程叫做采矿，这需要大量的计算。矿工之间也在竞争，谁先算出哈希，谁就能第一个添加新区块进入区块链，从而享受这个区块的全部收益，而其他矿工将一无所获。
 
@@ -122,7 +122,7 @@
 
 很早就有人呼吁，改革比特币协议，提升处理速度。这件事在2017年8月有了一点眉目，当时区块链发生了一次分叉，诞生了一个新协议，称为[Bitcoin Cash](https://en.wikipedia.org/wiki/Bitcoin_Cash)（简称 BCH）。这种新货币其他方面都与比特币一致，就是每个区块的大小从 1MB 增加到了 8MB，因此处理速度提升了8倍，手续费也低得多。该协议是对原有区块链的分叉，因此当时持有比特币的人，等于一人获赠了一份同样数量的 BCH。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2018/bg2018010407.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/3.6.png)
 
 BCH 等于创造了一种新货币，还有人提议，原始比特币的区块大小提升到 2MB，这称为[SegWit2x](https://en.wikipedia.org/wiki/SegWit2x)。这个建议原定于2017年11月实施，但是最后一刻由于缺乏共识，就被取消了，目前还在讨论中。
 
@@ -130,7 +130,7 @@ BCH 等于创造了一种新货币，还有人提议，原始比特币的区块�
 
 比特币是一个全世界的开放网络，只要你有服务器，就能加入这个网络，成为一个节点。每个节点都包含了整个区块链（目前大概 100多 GB），并且节点之间时刻不停地在同步信息。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2018/bg2018010408.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/3.7.png)
 
 当你发生了一笔支付，你所在的节点就会把这笔交易告诉另一个节点，直至传遍整个网络。矿工从网上收集各种新发生的交易，将它们打包写入区块链。一旦写入成功， 矿工所在节点的区块链，就成为最新版本，其他节点都会来复制新增的区块，保证全网的区块链都是一致的。
 

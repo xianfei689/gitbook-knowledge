@@ -4,7 +4,7 @@
 
 可是，简单易懂的入门文章却很少。区块链到底是什么，有何特别之处，很少有解释。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2017/bg2017122701.jpg)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/2.0.jpg)
 
 下面，我就来尝试，写一篇最好懂的区块链教程。毕竟它也不是很难的东西，核心概念非常简单，几句话就能说清楚。我希望读完本文，你不仅可以理解区块链，还会明白什么是挖矿、为什么挖矿越来越难等问题。
 
@@ -14,7 +14,7 @@
 
 区块链是什么？一句话，它是一种特殊的分布式数据库。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2017/bg2017122702.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/2.1.png)
 
 首先，区块链的主要作用是储存信息。任何需要保存的信息，都可以写入区块链，也可以从里面读取，所以它是数据库。
 
@@ -34,7 +34,7 @@
 
 区块链由一个个区块（block）组成。区块很像数据库的记录，每次写入数据，就是创建一个区块。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2017/bg2017122703.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/2.2.png)
 
 每个区块包含两个部分。
 
@@ -50,7 +50,7 @@
 
 这里，你需要理解什么叫[哈希](https://baike.baidu.com/item/哈希值)（hash），这是理解区块链必需的。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2017/bg2017122704.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/2.3.png)
 
 所谓"哈希"就是计算机可以对任意内容，计算出一个长度相同的特征值。区块链的 哈希长度是256位，这就是说，不管原始内容是什么，最后都会计算出一个256位的二进制数字。而且可以保证，只要原始内容不同，对应的哈希一定是不同的。
 
@@ -75,7 +75,7 @@
 
 正是通过这种联动机制，区块链保证了自身的可靠性，数据一旦写入，就无法被篡改。这就像历史一样，发生了就是发生了，从此再无法改变。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2017/bg2017122705.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/2.4.png)
 
 每个区块都连着上一个区块，这也是"区块链"这个名字的由来。
 
@@ -89,7 +89,7 @@
 
 这个过程就叫做采矿（mining），因为计算有效哈希的难度，好比在全世界的沙子里面，找到一粒符合条件的沙子。计算哈希的机器就叫做矿机，操作矿机的人就叫做矿工。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2017/bg2017122706.jpg)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/2.5.jpg)
 
 ## 六、难度系数
 
@@ -99,11 +99,11 @@
 
 原来，区块头包含一个[难度系数](http://www.righto.com/2014/02/bitcoin-mining-hard-way-algorithms.html)（difficulty），这个值决定了计算哈希的难度。举例来说，[第100000个区块](https://blockexplorer.com/block/000000000003ba27aa200b1cecaad478d2b00432346c3f1f3986da1afd33e506)的难度系数是 14484.16236122。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2017/bg2017122707.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/2.6.png)
 
 区块链协议规定，使用一个常量除以难度系数，可以得到目标值（target）。显然，难度系数越大，目标值就越小。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2017/bg2017122708.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/2.7.png)
 
 哈希的有效性跟目标值密切相关，只有小于目标值的哈希才是有效的，否则哈希无效，必须重算。由于目标值非常小，哈希小于该值的机会极其渺茫，可能计算10亿次，才算中一次。这就是采矿如此之慢的根本原因。
 
@@ -125,14 +125,14 @@ Nonce 是一个随机值，矿工的作用其实就是猜出 Nonce 的值，使�
 
 即使区块链是可靠的，现在还有一个问题没有解决：如果两个人同时向区块链写入数据，也就是说，同时有两个区块加入，因为它们都连着前一个区块，就形成了分叉。这时应该采纳哪一个区块呢？
 
-![](http://www.ruanyifeng.com/blogimg/asset/2017/bg2017122709.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/2.8.png)
 
 现在的规则是，新节点总是采用最长的那条区块链。如果区块链有分叉，将看哪个分支在分叉点后面，先达到6个新区块（称为"六次确认"）。按照10分钟一个区块计算，一小时就可以确认。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2017/bg2017122710.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/2.9.png)
 
 由于新区块的生成速度由计算能力决定，所以这条规则就是说，拥有大多数计算能力的那条分支，就是正宗的区块链。
-
+2.0.
 ## 九、总结
 
 区块链作为无人管理的分布式数据库，从2009年开始已经运行了8年，没有出现大的问题。这证明它是可行的。
@@ -147,7 +147,7 @@ Nonce 是一个随机值，矿工的作用其实就是猜出 Nonce 的值，使�
 
 如果无法满足上述的条件，那么传统的数据库是更好的解决方案。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2017/bg2017122711.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/knowledge/2.01.png)
 
 目前，区块链最大的应用场景（可能也是唯一的应用场景），就是以比特币为代表的加密货币。下一篇文章，我将会介绍[比特币的入门知识](http://www.ruanyifeng.com/blog/2018/01/bitcoin-tutorial.html)。
 
